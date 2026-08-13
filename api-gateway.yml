@@ -1,3 +1,6 @@
+jwt:
+  secretKey: vjrvm2gj3brnbn3vrenmpinbpenbpevmojfbnwepn
+
 spring:
   cloud:
     gateway:
