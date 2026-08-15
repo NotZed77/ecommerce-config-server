@@ -18,9 +18,10 @@ spring:
               - name: Authentication
                 args:
                   isEnabled: false
-              # - name: Authorization
-              #   args:
-              #     allowedRoles: ADMIN, SUPER_ADMIN
+              - name: Authorization
+              - name: AddUserRoles
+                args:
+                 allowedRoles: ADMIN, SUPER_ADMIN
           - id: inventory-service
             uri: lb://INVENTORY-SERVICE
             predicates:
