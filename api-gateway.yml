@@ -38,3 +38,12 @@ spring:
               - StripPrefix=2
               - AddRequestHeader=X-Custom-Header, zed
               - name: Authentication
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+server:
+  port: 8083
