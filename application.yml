@@ -12,8 +12,3 @@ management:
     tracing: 
       endpoint: http://zipkin:9411/api/v2/spans
 
-spring:
-  jpa:
-    show-sql: true
-    properties.hibernate.format_sql: true
-    hibernate.ddl-auto: create-drop
