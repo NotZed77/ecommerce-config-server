@@ -38,8 +38,3 @@ spring:
               - StripPrefix=2
               - AddRequestHeader=X-Custom-Header, zed
               - name: Authentication
-
-
-
-server:
-  port: 8083
