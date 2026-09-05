@@ -19,7 +19,6 @@ spring:
                 args:
                   isEnabled: false
               - name: Authorization
-              - name: AddUserRoles
                 args:
                  allowedRoles: ADMIN, SUPER_ADMIN
           - id: inventory-service
