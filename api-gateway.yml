@@ -8,7 +8,7 @@ spring:
         webflux:
           routes:
           - id: order-service
-            uri: lb://ORDER-SERVICE
+            uri: ${ORDER_SERVICE_URI:lb://ORDER-SERVICE}
             predicates:
               - Path=/api/v1/order/**
             filters:
@@ -22,7 +22,7 @@ spring:
                 args:
                  allowedRoles: ADMIN, SUPER_ADMIN
           - id: inventory-service
-            uri: lb://INVENTORY-SERVICE
+            uri: ${INVENTORY_SERVICE_URI:lb://INVENTORY-SERVICE}
             predicates:
               - Path=/api/v1/inventory/**
             filters:
