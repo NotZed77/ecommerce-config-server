@@ -1,7 +1,7 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://discovery-service:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 management:
   endpoints:
@@ -12,6 +12,5 @@ management:
     sampling:
       probability: 1.0
   zipkin:
-    tracing: 
-      endpoint: http://zipkin:9411/api/v2/spans
-
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
