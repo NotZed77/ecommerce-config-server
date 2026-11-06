@@ -2,6 +2,12 @@ jwt:
   secretKey: vjrvm2gj3brnbn3vrenmpinbpenbpevmojfbnwepn
 
 spring:
+  application:
+    name: api-gateway
+  config:
+    import: configserver:http://localhost:8888
+
+spring:
   cloud:
     gateway:
       server:
